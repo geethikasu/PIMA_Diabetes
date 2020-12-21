@@ -12,6 +12,7 @@ body{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
+	background-image: lineargradient(to bottom, rgba(200,0,100,0.2),rgba(200,0,100,0.7));
 }
 
 /* Website Title */
