@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Diabetes Predictor</title>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+	</head>
+
+    <body>
+
+        <!-- Website Title -->
+		<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Diabetes Predictor</span></h2>
+    	</div>
+
+		<!-- Result -->
+		<div class="results">
+			{% if pred==1 %}
+				<h1>Prediction: <span class='danger'>Sorry, to say you but you've diabetes..</span></h1>
+			{% elif pred==0 %}
+				<h1>Prediction: <span class='safe'>Great! You DON'T have diabetes.</span></h1>
+			{% endif %}
+		</div>
+
+		<!-- Footer -->
+       <div class='footer'>
+           <p class='footer-description'>Machine Learning WebApp developed using Flask,deployed in heroku.</p>
+       </div>
+
+	</body>
+</html>
