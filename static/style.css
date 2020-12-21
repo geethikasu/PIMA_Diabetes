@@ -12,10 +12,13 @@ body{
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	background-image: lineargradient(to bottom, rgba(200,0,100,0.2),rgba(200,0,100,0.7));
+
 }
 
 /* Website Title */
+.container-heading{
+  	background-image: lineargradient(to bottom, rgba(200,0,100,0.2),rgba(200,0,100,0.7));
+}
 
 .heading_font{
     color: #ffffff;
@@ -80,7 +83,9 @@ body{
 
 /* Footer */
 
-
+.footer{
+   	background-image: lineargradient(to bottom, rgba(200,0,100,0.2),rgba(200,0,100,0.7));
+}
 .footer-description{
 	color: #ffffff;
 	margin: 0;
