@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Diabetes Predictor</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+ <div class="login">
+	<h1>Predict your Diabetes</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+
+    	        <input type="text" name="Pregnancies" placeholder="No of Pregnancies"><br>
+                <input type="text" name="Glucose" placeholder="Glucose in(mg/dL)"><br>
+                <input type="text" name="BloodPressure" placeholder="Blood Pressure in(mmHg)"><br>
+                <input type="text" name="SkinThickness" placeholder="Skin Thickness in(mm)"><br>
+                <input type="text" name="Insulin" placeholder="Insulin Level in(IU/mL)"><br>
+                <input type="text" name="BMI" placeholder="Body Mass Index in(kg/m²)"><br>
+                <input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function"><br>
+                <input type="text" name="Age" placeholder="Age in(years)"><br>
+
+        		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+ </div>
+</body>
+</html>
